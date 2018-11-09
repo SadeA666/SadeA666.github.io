@@ -5,36 +5,27 @@
   <body>
     <a-scene>
       
-  
+<a-assets>
+     <a-asset-item id="tinker-obj" src="tinker.obj"></a-asset-item> 
+
+     <a-asset-item id="obj-mtl" src="tinker.mtl"></a-asset-item> 
+
+</a-assets>
+
+<a-entity obj-model="obj: #tinker-obj; mtl: #obj-mtl" scale="0.01 0.01 0.01" rotation="-90 0 0" position="0 2 -5"></a-entity>
 
 
   <audio src="FBIOPENUP.mp3" autoplay
 preload>
 </audio>
-      <a-sphere position="0 1.75 -5" radius="0.7" color="#E3C2A1"></a-sphere>
-      <a-sphere position="0.5 1.85 -4.5" color="#000000" radius="0.25"></a-sphere>
-      <a-sphere position="-0.5 1.85 -4.5" color="#000000" radius="0.25"></a-sphere>
-      <a-sphere position="-0.5 0.85 -4.5" color="#E3C2A1" radius="0.25"></a-sphere>
-      <a-sphere position="0.5 0.85 -4.5" color="#E3C2A1" radius="0.25"></a-sphere>
-      <a-cylinder position="0 0.5 -5 " radius="0.5" height="2.4" color="#FFC65D"></a-cylinder>
+     
 
-      <a-sphere position="7 1.75 -10" radius="0.7" color="#E3C2A1"></a-sphere>
-      <a-sphere position="7.5 1.85 -9.5" color="#000000" radius="0.25"></a-sphere>
-      <a-sphere position="6.5 1.85 -9.5" color="#000000" radius="0.25"></a-sphere>
-      <a-sphere position="6.5 0.85 -9.5" color="#E3C2A1" radius="0.25"></a-sphere>
-      <a-sphere position="7.5 0.85 -9.5" color="#E3C2A1" radius="0.25"></a-sphere>
-      <a-cylinder position="7 0.5 -10 " radius="0.5" height="2.4" color="#FFC65D"></a-cylinder>
-      <a-text position="9 0.1 -10" value="This is so exciting! I need to show Aunt Miranda!"></a-text>
-
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="40" height="40" color="#000000">
-
-  
 
   <a-entity obj-model="obj: #cone-obj; mtl: #cone-mtl"></a-entity>
 
 
         <a-sky color="#C6F5FA"></a-sky>
-        <a-text value="Hello! Are you a Human!?! I haven't seen one of those in years!"></a-text>
+        
     </a-scence> 
   </body>
 </html>
